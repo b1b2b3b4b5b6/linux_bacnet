@@ -1,0 +1,14 @@
+[Unit]
+Description=light_sensor_bacnet
+After=network.target 
+
+[Service]
+ExecStart=/usr/share/linux_bacnet/main/bacserv
+ExecStop=/bin/kill -KILL $MAINPID
+Type=simple
+KillMode=control-group
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target

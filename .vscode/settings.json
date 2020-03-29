@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "cov.h": "c",
+        "bactext.h": "c",
+        "config.h": "c"
+    }
+}
